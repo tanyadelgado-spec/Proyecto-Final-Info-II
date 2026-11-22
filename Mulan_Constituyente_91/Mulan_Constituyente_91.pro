@@ -9,11 +9,13 @@ CONFIG += c++17
 SOURCES += \
     fisicas.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    mushu.cpp
 
 HEADERS += \
     fisicas.h \
-    mainwindow.h
+    mainwindow.h \
+    mushu.h
 
 FORMS += \
     mainwindow.ui

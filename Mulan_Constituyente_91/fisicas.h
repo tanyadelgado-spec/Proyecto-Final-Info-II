@@ -19,6 +19,7 @@ public:
 
 //Movimiento parabólico de un objeto sometido a la gravedad
 class SaltoParabolico : public Fisica {
+private:
     //900 unidades/s**2, con eje Y creciendo hacia abajo, la gravedad es +
     double gravedad;
 
@@ -30,7 +31,7 @@ public:
 
 //Oscilacion angular de objetos colgantes
 class Oscilacion : public Fisica {
-
+private:
     //Características de la oscilación
     double amplitud, frecuencia, fase;
 
@@ -42,6 +43,7 @@ public:
 
 // Movimiento con aceleracion externa y amortiguamiento lineal
 class MovimientoAmortiguado : public Fisica {
+private:
     //'k'. Coeficiente de amortiguamiento s**(-1)
     double aceleracion, k;
 
@@ -53,6 +55,7 @@ public:
 
 // Caida de documentos con oscilacion horizontal
 class CaidaDocumentos : public Fisica {
+private:
     double gravedad, amplitud, frecuencia;
 public:
     CaidaDocumentos(double g = 500.0, double a = 18.0, double w = 3.0) : gravedad(g), amplitud(a), frecuencia(w) {}
